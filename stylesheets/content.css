@@ -1,0 +1,156 @@
+.mario{
+  width: 68px;
+  height: 68px;
+  display: block;
+  position: relative;
+  background: url('../img/mario-walk-n-jump-68.png');
+  animation: walk .9s steps(1) infinite;
+}
+.path{
+  width: 68px;
+  height: 68px;
+  display: block;
+  position: absolute;
+  top: 200px;
+  animation: path 3s linear infinite;
+}
+.mario2{
+  width: 68px;
+  height: 68px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  background: url('../img/mario-walk-n-jump-68.png');
+  animation: jump 5s steps(1) infinite;
+}
+@keyframes walk {
+  0%{ background-position: 0px top;}
+  25%{ background-position: -68px top;}
+  50%{ background-position: -136px top;}
+  100%{ background-position: -204px top;}
+}
+@keyframes path {
+  0%{ left: -68px; top;}
+  25%{ left: 30%; top: 200px;}
+  50%{ left: 50%; top: 150px;}
+  55%{ left: 56%; top: 200px;}
+  100%{ left: 100%;}
+}
+@keyframes jump {
+  0%{ opacity: 0;}
+  40%{ background-position: -272px top; opacity: 1;}
+  50%{ background-position: -340px top; opacity: 1;}
+  51%{ background-position: -340px top; opacity: 1;}
+  100%{ opacity: 0;}
+}
+
+.blast{
+  width: 151px;
+  height: 151px;
+  display: block;
+  position: absolute;
+  background: url('../img/blast-151.png');
+  left: 50%;
+  animation: blast 2s steps(1) infinite;
+  animation-play-state: paused;
+}
+.blast:hover{
+  animation-play-state: running;
+}
+@keyframes blast {
+  0%{ background-position: 0px 0px ;}
+  3%{ background-position: -151px 0px ;}
+  6%{ background-position: -302px 0px ;}
+  9%{ background-position: -453px 0px ;}
+  12%{ background-position: -604px 0px ;}
+  15%{ background-position: -755px 0px ;}
+  18%{ background-position: -906px 0px ;}
+  21%{ background-position: -1056px 0px ;}
+  24%{ background-position: 0px -151px ;}
+  27%{ background-position: -151px -151px ;}
+  30%{ background-position: -302px -151px;}
+  33%{ background-position: -453px -151px;}
+  36%{ background-position: -604px -151px ;}
+  39%{ background-position: -755px -151px ;}
+  42%{ background-position: -906px -151px ;}
+  45%{ background-position: -1056px -151px;}
+  48%{ background-position: 0px -302px;}
+  51%{ background-position: -151px -302px ;}
+  54%{ background-position: -302px -302px;}
+  57%{ background-position:  -453px -302px;}
+  60%{ background-position: -604px -302px;}
+  63%{ background-position: -755px -302px;}
+  66%{ background-position: -906px -302px;}
+  69%{ background-position: -1056px -302px;}
+  71%{ background-position: 0px -453px ;}
+  74%{ background-position: -151px -453px;}
+  77%{ background-position: -302px -453px;}
+  80%{ background-position: -453px -453px;}
+  83%{ background-position: -604px -453px;}
+  86%{ background-position: -755px -453px;}
+  89%{ background-position: -906px -453px;}
+  92%{ background-position: -1056px -453px;}
+  95%{ background-position: 0px -604px ;}
+  98%{ background-position: -151px -604px ;}
+  100%{ background-position: -302px  -604px;}
+}
+
+.text{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 10s linear infinite;
+}
+.text:hover{
+  animation-play-state: paused;
+}
+@keyframes text {
+  from {text-indent: 100%}
+  to {text-indent: -100%}
+}
+.smile{
+  width: 160px;
+  height: 160px;
+  display: block;
+  position: absolute;
+  background: url('../img/emoji-120.png');
+  left: 20%;
+  animation: smilik 0.1s steps(1) infinite;
+  animation-play-state: paused;
+}
+.smile:hover{
+  animation-play-state: running;
+}
+@keyframes smilik {
+  0%{ background-position: 0px top;}
+  16%{ background-position: -160px top;}
+  32%{ background-position: -320px top;}
+  48%{ background-position: -480px top;}
+  64%{ background-position: -640px top;}
+  78%{ background-position: -800px top;}
+  100%{ background-position: -960px top;}
+}
+.cool{
+  width: 160px;
+  height: 160px;
+  display: block;
+  position: absolute;
+  background: url('../img/Group 4.png');
+  left: 20%;
+  top: 40%;
+  animation: suprcool 0.1s steps(1) infinite;
+  animation-play-state: paused;
+}
+.cool:hover{
+  animation-play-state: running;
+}
+@keyframes suprcool {
+  0%{ background-position: 0px top;}
+  16%{ background-position: -160px top;}
+  32%{ background-position: -320px top;}
+  48%{ background-position: -480px top;}
+  64%{ background-position: -640px top;}
+  78%{ background-position: -800px top;}
+  100%{ background-position: -960px top;}
+}
