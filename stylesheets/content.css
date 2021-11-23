@@ -147,10 +147,10 @@
 }
 @keyframes suprcool {
   0%{ background-position: 0px top;}
-  16%{ background-position: -171px top;}
-  32%{ background-position: -342px top;}
-  48%{ background-position: -513px top;}
-  64%{ background-position: -684px top;}
-  78%{ background-position: -855px top;}
-  100%{ background-position: -1026px top;}
+  16%{ background-position: -160px top;}
+  32%{ background-position: -320px top;}
+  48%{ background-position: -480px top;}
+  64%{ background-position: -640px top;}
+  78%{ background-position: -800px top;}
+  100%{ background-position: -960px top;}
 }
